@@ -26,13 +26,71 @@ html {
    📦 CONTAINER
 ================================== */
 .container {
-  width: 75%;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
 }
 
+.header {
+  height: 40rem;
+  background: linear-gradient(-5.71deg, white 49.1%, transparent 50.1%),
+    url("/src/assets/images/picture/A_HeaderMountain02.png");
+  background-size: 100vw 10vw, cover;
+  background-position: left bottom, center;
+  background-repeat: no-repeat, no-repeat;
+}
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__items {
+  display: flex;
+  gap: 4rem;
+  margin-top: 1.5rem;
+  margin-right: 36rem;
+}
+.navigation__item {
+  list-style: none;
+}
+.navigation__link {
+  text-decoration: none;
+  color: white;
+}
+.navigation__link:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 226, 156);
+  text-underline-offset: 0.25rem;
+}
+.navigation__icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  fill: currentColor;
+  margin-top: 0.75rem;
+}
+.headline {
+  text-align: center;
+  margin-top: 2rem;
+}
+.headline__title {
+  font-size: 8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px black;
+  line-height: 10rem;
+  font-weight: 700;
+}
+.headline__subtitle {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px black;
+  letter-spacing: 0.45rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
 /* ================================
    📱 MEDIA QUERIES
 ================================== */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .grid-2 {
     grid-template-columns: 1fr;
   }
@@ -78,4 +136,4 @@ html {
       font-size: 1.3rem;
     }
   }
-}
+} */
