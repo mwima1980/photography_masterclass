@@ -11,15 +11,15 @@
 
 html {
   font-size: 100%;
-  font-family: "Jost, sans-serif";
+  font-family: "Jost", sans-serif;
 }
 
 @font-face {
   font-family: "Jost";
   font-style: normal;
-  font-weight: 400;
-  src: url(/src/assets/fonts/jost-regular.woff2) format("woff2"),
-    url(/src/assets/fonts/jost-regular.woff) format("woff");
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../assets/fonts/jost/Jost-VariableFont_wght.woff2) format("woff2");
 }
 
 /* ================================
@@ -92,7 +92,12 @@ html {
   text-transform: uppercase;
   text-shadow: 0 0 8px black;
   line-height: 10rem;
-  font-weight: 700;
+
+  animation-name: headline__title-font-weight;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
 .headline__subtitle {
   font-size: 1.5rem;
@@ -105,6 +110,22 @@ html {
   left: 0;
   right: 0;
   z-index: 1;
+
+  animation-name: headline__title-font-weight;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+@keyframes headline__title-font-weight {
+  0% {
+    opacity: 0;
+    font-weight: 100;
+  }
+  100% {
+    opacity: 1;
+    font-weight: 700;
+  }
 }
 .header__mountains {
   height: 40rem;
