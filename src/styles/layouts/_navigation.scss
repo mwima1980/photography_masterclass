@@ -10,15 +10,19 @@
 .navigation__list {
   display: flex;
   justify-content: space-between;
+
 }
 .navigation__items {
   display: flex;
   gap: 4rem;
   margin-top: 1.5rem;
   margin-right: 36rem;
+
+
   @media (min-width: $breakpoint-xs) {
     &--moblie-hidden {
       display: none;
+
     }
   }
   @media (min-width: $breakpoint-lg) {
@@ -30,25 +34,42 @@
   @media (min-width: $breakpoint-lg) {
 
     &--moblie-hidden {
-      margin-right: 16rem;
+      margin-right: 14rem;
     }
   }
 }
 .navigation__item {
   list-style: none;
 }
+ @media (min-width: $breakpoint-sm) {
+    .navigation__item--right {
+      position: relative;
+      left: 3.5rem;
+    }
+   .navigation__item--left{
+      position: relative;
+      right: 3.22rem;
+    }
+  }
+ 
+.navigation__item--left {
+ position: relative;
+
+}
 .navigation__link {
   text-decoration: none;
   color: white;
+   
 }
 .navigation__link:hover {
   text-decoration: underline;
-  text-decoration-color: rgb(0, 226, 156);
+  text-decoration-color: $color-primary;
   text-underline-offset: 0.25rem;
 }
 .navigation__icon {
   width: 3.25rem;
   height: 3.25rem;
+  
   fill: currentColor;
   margin-top: 0.75rem;
   &:hover {
@@ -61,6 +82,7 @@
   @media (min-width: $breakpoint-sm) {
     width: 10rem;
     height: 3.5rem;
+   
   }
 }
 

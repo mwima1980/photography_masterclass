@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/main.css" />
-    <title>Photography Masterclass</title>
+    <title>Photography</title>
   </head>
   <body>
     <header class="header">
@@ -13,7 +13,7 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <div>
-              <li class="navigation__item">
+              <li class="navigation__item navigation__item--left">
                 <a href="#" aria-label="Startseite" class="navigation__link"
                   ><svg
                     class="navigation__icon"
@@ -70,7 +70,7 @@
               </li>
             </div>
             <div>
-              <li class="navigation__item">
+              <li class="navigation__item navigation__item--right">
                 <a class="navigation__link" href="#">
                   <svg
                     class="navigation__icon"
@@ -121,5 +121,35 @@
       <div class="header__mountains"></div>
       <div class="header__slope"></div>
     </header>
+    <section class="motivation">
+      <div class="container">
+        <div class="motivation__column--text">
+          <h2 class="motivation__text--heading">
+            Warum Landschaftsfotografie?
+          </h2>
+          <p class="motivation__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            placeat quae perferendis dicta et non aut molestias harum fugit
+            culpa eius quas repudiandae deleniti, eos ipsum modi aperiam
+            architecto minima.
+          </p>
+        </div>
+        <div class="motivation__column--image">
+          <img
+            class="motivation__image"
+            src="/src/assets/images/motivation/pexels-jacub-gomez-1152043.jpg"
+            alt=""
+          /><img
+            class="motivation__image"
+            src="/src/assets/images/motivation/pexels-jaime-reimer-2662086.jpg"
+            alt=""
+          /><img
+            class="motivation__image"
+            src="/src/assets/images/motivation/pexels-simon-migaj-747964.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>

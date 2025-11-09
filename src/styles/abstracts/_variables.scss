@@ -1,4 +1,7 @@
+@use 'sass:color';
 
+/** Color */
+$color-primary: rgb(0, 226, 156)!default;
 /** 1200px oder schmaler */
 $breakpoint-lg: 75em!default;
 
@@ -8,7 +11,7 @@ $breakpoint-md: 62em!default;
 /** 768px oder schmaler */
 $breakpoint-sm: 48em!default;
 
-/** 576px oder schmaler */
+/** 576px/360px oder schmaler */
 $breakpoint-xs: 22.5em!default;
 
 /** Breakpoints */
