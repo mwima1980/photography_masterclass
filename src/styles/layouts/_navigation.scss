@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 /* ================================
    NAVIGATION
 ================================== */
@@ -14,18 +16,18 @@
   gap: 4rem;
   margin-top: 1.5rem;
   margin-right: 36rem;
-  @media (min-width: 360px) {
+  @media (min-width: $breakpoint-xs) {
     &--moblie-hidden {
       display: none;
     }
   }
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-lg) {
     &--moblie-hidden{
     display: flex;
     margin-right: 6rem;
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: $breakpoint-lg) {
 
     &--moblie-hidden {
       margin-right: 16rem;
@@ -52,11 +54,11 @@
   &:hover {
     opacity: 0.5;
   }
-  @media (min-width: 360px) {
+  @media (min-width: $breakpoint-xs) {
     width: 1.5rem;
     height: 1.5rem;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-sm) {
     width: 10rem;
     height: 3.5rem;
   }
